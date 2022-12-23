@@ -86,9 +86,9 @@ VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
 VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 ```
 
-# For debug
+# For debug, Enable throw option
 
-Enable thorow option
+デフォルトだと.envの設定が間違っていてもエラーが発生しないので設定を変えておく
 
 `config/filesystems.php`
 
@@ -128,6 +128,8 @@ Enable thorow option
 
 # Test
 
+Webからではなくても tinker で動作確認出来る
+
 `php artisan tinker`
 
 ```
@@ -135,5 +137,6 @@ Enable thorow option
 = true
 ```
 
+ファイルを作成したら AWSのコンソールなどでファイルを確認する
 
 
